@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!---HTML <!DOCTYPE> Declaration-->
+<html lang="en"> <!---Text of the document-->
+<head> <!---Head-->
+  <meta charset="UTF-8"> <!---HTML Encoding-->
+  <title>Login</title> <!---Tab name-->
+  <style>
+    .avatar { /*Avatar in the upper right corner*/
+      padding-top: 5px;
+      float: right;
+    }
+    .container1 { /*Characteristics inside the first container (ObjektTop class)*/
+      padding-top: 1px;
+      padding-left: 20px; 
+      padding-right: 20px; 
+      font-size: 26px; /*Text size*/
+    }
+    .container2 { /*Characteristics inside the second container (ObjektMiddle class)*/
+      padding-top: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 24px; /*Text size*/
+      text-align: center;
+    }
+    .ObjektTop { /*The object in the middle of the site*/
+      position: static;
+      top: 0%;
+      left: 0%;
+      width: 100%; /*Width of the object*/
+      height: 80px; /*Height of the object*/
+      background-color: rgb(173, 169, 169); /*Background color*/
+      border-radius: 10px; /* Characteristic that changes the corners of the object*/
+      letter-spacing: 0.02em; /*Width of text*/
+    }
+    .ObjektMiddle { /*The object in the middle of the site*/
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 400px; /*Width of the object*/
+      height: 430px; /*Height of the object*/
+      margin: -215px 0 0 -200px;
+      background-color: rgb(203, 199, 199); /*Background color*/
+      border-radius: 10px; /* Characteristic that changes the corners of the object*/
+      letter-spacing: 0.09em; /*Width of text*/
+    }
+    input.text { /*Settings for text input*/
+      width:  100px; /*Text input width*/
+      height: 25px; /*Text input height*/
+      padding: 5px 10px 5px 10px; 
+      border: 0px solid rgb(203, 199, 199); /*The color of the text input border*/
+      font-size: 16px; /*Text size*/
+      font-family: Tahoma; /*Type of font*/
+      margin: 3px;
+    }
+    button { /*Settings of one button named "Log in"*/
+      width:  75px; /*Button width*/
+      height: 24px; /*Button height*/
+      background: rgb(33, 33, 141); /*Button Color*/
+      color: white; /*The color of the text inside the button*/
+      font-size: 16px; /*Text size*/
+      border: 0px solid rgb(203, 199, 199); /*Button border color*/
+    }
+  </style>
+</head>
+<body> <!---Body-->
+  <div class="ObjektTop"> <!---First objekt-->
+    <div class="container1">
+      <img class="avatar" src="https://moodle.ut.ee/theme/image.php/classic_ut/core/1664784034/u/f1" alt="avatar"
+      width="68" height="68"> <!---Image-->
+      <p>Home</p> <!---Text--> 
+    </div>
+  </div>
+  <div class="ObjektMiddle"> <!---Second objekt-->
+    <form class="modal-content animate" action="/action_page.php"> <!---Form-->
+      <div class="container2">
+        <p><strong>Welcome to PostIt</strong></p> <!---Text--> 
+        <p><a href="#">Create an account</a><br> <!---Link to create your account-->
+          or<br> <!---Text--> 
+          Please log in <!---Text--> 
+        </p>
+        <label for="email"></label>
+        <input class="text" id="email" type="email" placeholder="Email" name="email" value="" size="10" required><br> <!---Email-->
+        <label for="psw"></label>
+        <input class="text" id="psw" type="password" placeholder="Password" name="psw" value="" required><br><br> <!---Password-->
+        <button type="submit">Log in</button><br> <!---Button-->
+        <p><a href="#">Forget password?</a></p> <!---Link to password-->
+      </div>
+    </form>
+  </div>
+</body>
+</html>
