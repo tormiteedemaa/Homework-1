@@ -1,0 +1,8 @@
+Group: Group 5
+Team number: Group E
+Names: 
+	Belinda Lepmets - C17123
+	Aleksander Ontin - C18639
+	Tormi Teedemaa - B810588
+Link to the repository: https://github.com/tormiteedemaa/Homework-1
+
