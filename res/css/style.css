@@ -100,7 +100,7 @@ a {
 	  border-bottom: 150px;
 	  margin-top: 45px; 
 	  margin-right: 20px;
-	  width:100px;
+	  width:140px;
 	  float:right;
 }
 	hr.rounded2 {
@@ -109,7 +109,7 @@ a {
 	  border-bottom: 150px;
 	  margin-top: 45px; 
 	  margin-left: 20px;
-	  width:100px;
+	  width:140px;
 	  float:left;
 	}
 	.wrapper {
@@ -117,8 +117,8 @@ a {
 	   flex-direction: row;
 	   margin-top: 45px;
 	   background-color:#CFCFCF;
-	   margin-right: 140px; 
-	   margin-left: 140px;
+	   margin-right: 175px; 
+	   margin-left: 175px;
 	   border-radius: 20px;
 	   
 	}
@@ -127,8 +127,8 @@ a {
 	   flex-direction: row;
 	   margin-top: 45px;
 	   background-color:#CFCFCF;
-	   margin-right: 140px; 
-	   margin-left: 140px;
+	   margin-right: 175px; 
+	   margin-left: 175px;
 	   border-radius: 20px;
 	   
 	}
@@ -138,8 +138,8 @@ a {
 	   
 	   margin-top: 45px;
 	   background-color:#CFCFCF;
-	   margin-right: 140px; 
-	   margin-left: 140px;
+	   margin-right: 175px; 
+	   margin-left: 175px;
 	   border-radius: 20px;
   
 }
@@ -213,8 +213,9 @@ hr.rounded2 {
   
 }
 @media (max-width: 500px) {
- 
-    .grid{
-        grid-template-columns: auto;
+ .header {
+        flex-direction: column;
+		align-items: center;
     }
+    
 }
