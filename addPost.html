@@ -1,0 +1,115 @@
+
+<!DOCTYPE html> <!---HTML <!DOCTYPE> Declaration-->
+<html lang="en"> <!---Text of the document-->
+<head> <!---Head-->
+  <meta charset="UTF-8"> <!---HTML Encoding-->
+  <title>Add Page</title> <!---Tab name-->
+  <style>
+    .avatar { /*Avatar in the upper right corner*/
+      padding-top: 5px;
+      float: right;
+    }
+    .container1 { /*Characteristics inside the first container (ObjektTop class)*/
+      padding-top: 1px;
+      padding-left: 20px; 
+      padding-right: 20px; 
+      font-size: 26px; /*Text size*/
+    }
+    .container2 { /*Characteristics inside the second container (ObjektMiddle class)*/
+      padding-top: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 24px; /*Text size*/
+      text-align: center;
+    }
+    .ObjektTop { /*The object in the middle of the site*/
+      position: static;
+      top: 0%;
+      left: 0%;
+      width: 100%; /*Width of the object*/
+      height: 80px; /*Height of the object*/
+      background-color: rgb(173, 169, 169); /*Background color*/
+      border-radius: 10px; /* Characteristic that changes the corners of the object*/
+      letter-spacing: 0.02em; /*Width of text*/
+    }
+    .ObjektMiddle { /*The object in the middle of the site*/
+      position: fixed;
+      top: 56%;
+      left: 50%;
+      width: 400px; /*Width of the object*/
+      height: 390px; /*Height of the object*/
+      margin: -215px 0 0 -200px;
+      background-color: rgb(203, 199, 199); /*Background color*/
+      border-radius: 10px; /* Characteristic that changes the corners of the object*/
+      letter-spacing: 0.09em; /*Width of text*/
+    }
+    input.text { /*Settings for text input*/
+      width:  150px; /*Text input width*/
+      height: 100px; /*Text input height*/
+      padding: 5px 10px 5px 10px; 
+      border: 0px solid rgb(203, 199, 199); /*The color of the text input border*/
+      font-size: 16px; /*Text size*/
+      font-family: Tahoma; /*Type of font*/
+      margin: 3px;
+    }
+    .button1 { /*Settings of one button named "Create post"*/
+      width:  140px; /*Button width*/
+      height: 35px; /*Button height*/
+      background: rgb(33, 33, 141); /*Button Color*/
+      color: white; /*The color of the text inside the button*/
+      font-size: 16px; /*Text size*/
+      border: 0px solid rgb(203, 199, 199); /*Button border color*/
+      letter-spacing: 00.1em;
+    }
+    .button2 { /*Settings of one button named "Create post"*/
+      width:  140px; /*Button width*/
+      height: 35px; /*Button height*/
+      background: rgb(92, 92, 93); /*Button Color*/
+      color: white; /*The color of the text inside the button*/
+      font-size: 16px; /*Text size*/
+      border: 1px solid rgb(3, 0, 0); /*Button border color*/
+      letter-spacing: 0.1em;
+    }
+    .button3 { /*Settings of one button named "Create post"*/
+      width:  130px; /*Button width*/
+      height: 30px; /*Button height*/
+      background: rgb(173, 169, 169); /*Button Color*/
+      color: black; /*The color of the text inside the button*/
+      font-size: 24px; /*Text size*/
+      border: 0cm;
+    }
+    .button3:hover{
+        color: blue;
+    }
+    label {
+        display: inline-block;
+        width: 140px;
+        text-align: right;
+    }
+
+
+  </style>
+</head>
+<body> <!---Body-->
+  <div class="ObjektTop"> <!---First objekt-->
+    <div class="container1">
+      <img class="avatar" src="https://moodle.ut.ee/theme/image.php/classic_ut/core/1664784034/u/f1" alt="avatar"
+      width="68" height="68"> <!---Image-->
+      <form action="index.html">
+        <button class="button3">Home</button>
+      </form>
+    </div>
+  </div>
+  <div class="ObjektMiddle"> <!---Second objekt-->
+    <form action="index.html"> <!---Form-->
+      <div class="container2">
+        <label for="text">Post <br>body</label>
+        <input class="text" id="text" type="text" placeholder="textarea" name="text" value="" size="10" ><br><br> <!---textarea-->
+        <label><br>Select <br>file</label>
+        <button class="button2">Choose File</button><br><br><br> <!---Button-->
+        <button class="button1" type="submit">Create post</button><br> <!---Button-->
+      </div>
+    </form>
+  </div>
+</body>
+</html>
