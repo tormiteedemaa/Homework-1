@@ -1,9 +1,7 @@
-{
-    font-family: sans-serif;
-    box-sizing: border-box;
-
-  }
-
+p {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
 body {
     margin: 0;
 	background-color: #A9A9A9;
@@ -145,13 +143,6 @@ a {
 	   border-radius: 20px;
   
 }
-
-
-
-
-
-
-
 }
 
     /* 
@@ -212,12 +203,11 @@ hr.rounded2 {
    margin-right: 450px; 
    margin-left: 450px;
    border-radius: 20px;
-  
+  }
 }
 @media (max-width: 799px) {
- .header {
-        flex-direction: column;
-		align-items: center;
-    }
-    
+    .header {
+      flex-direction: column;
+		  align-items: center;
+  }   
 }
