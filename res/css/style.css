@@ -214,7 +214,7 @@ hr.rounded2 {
    border-radius: 20px;
   
 }
-@media (max-width: 500px) {
+@media (max-width: 799px) {
  .header {
         flex-direction: column;
 		align-items: center;
