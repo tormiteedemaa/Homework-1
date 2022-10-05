@@ -24,22 +24,10 @@ a {
 	float:left;
   margin-left: 10px;
 }
-.likebutton{
-	float:left;
-	margin-left:15px;
-  margin-bottom: 10px;
-}
 .pilt{
   display: block;
   margin-left: 10px;
 }
-.tekst {
-  display: block;
-  font-size: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  text-align: justify;
-}	
 .logo {
   margin: 0;
   font-size: 1.1em;
@@ -66,14 +54,14 @@ a {
   margin-top: 5px;
   margin-left: 12px;
 }
-.nav a {
+.nav a { /*Descendant Selector*/
   padding: 10px 15px;
   text-align: center;
   display: block;
   color: #34495e;
   font-size: 30px;
 }
-.nav a:hover {
+.nav a:hover { /*Descendant Selector*/
   background-color: #CCC0BB;
   color: #092747;
 	border-radius: 10px;
@@ -123,4 +111,16 @@ hr.rounded2 {
 .header {
   flex-direction: row;
   justify-content: space-between;
+}
+.posttekst ~ .tekst{ /*General Sibling Selector (~)*/
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: justify;
+}
+.logo2 ~ .likebutton { /*General Sibling Selector (~)*/
+  float:left;
+	margin-left:15px;
+  margin-bottom: 10px;
 }
