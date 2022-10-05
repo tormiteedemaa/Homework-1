@@ -43,7 +43,7 @@ a {
 .logo {
   margin: 0;
   font-size: 1.1em;
-	margin-right:5px;
+	margin-right:12px;
 }
 .logo2 {
 	float:left;
@@ -64,6 +64,7 @@ a {
 }
 .nav {
   margin-top: 5px;
+  margin-left: 12px;
 }
 .nav a {
   padding: 10px 15px;
