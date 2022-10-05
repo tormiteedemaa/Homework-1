@@ -43,16 +43,6 @@
       margin: -215px 0 0 -200px;
       background-color: #E78680; /*Background color*/
       border-radius: 10px; /* Characteristic that changes the corners of the object*/
-      letter-spacing: 0.09em; /*Width of text*/
-    }
-    input.text { /*Settings for text input*/
-      width:  100px; /*Text input width*/
-      height: 25px; /*Text input height*/
-      padding: 5px 10px 5px 10px; 
-      border: 0px solid rgb(203, 199, 199); /*The color of the text input border*/
-      font-size: 16px; /*Text size*/
-      font-family: Tahoma; /*Type of font*/
-      margin: 3px;
     }
     button { /*Settings of one button named "Log in"*/
       width:  75px; /*Button width*/
@@ -77,6 +67,18 @@
         background-color: #CCC0BB; /*Button Color*/
         color: #092747; /*The color of the text inside the button*/
     }
+    div > p { /*Child Selector (>)*/
+      letter-spacing: 0.07em; /*Width of text*/
+    }
+    label + input { /*Adjacent Sibling Selector (+)*/
+      width:  100px; /*Text input width*/
+      height: 25px; /*Text input height*/
+      padding: 5px 10px 5px 10px; 
+      border: 0px solid rgb(203, 199, 199); /*The color of the text input border*/
+      font-size: 16px; /*Text size*/
+      font-family: Tahoma; /*Type of font*/
+      margin: 3px;
+    }
   </style>
 </head>
 <body> <!---Body-->
@@ -98,9 +100,9 @@
           Please log in <!---Text--> 
         </p>
         <label for="email"></label>
-        <input class="text" id="email" type="email" placeholder="Email" name="email" value="" size="10" required><br> <!---Email-->
+        <input id="email" type="email" placeholder="Email" name="email" value="" size="10" required><br> <!---Email-->
         <label for="psw"></label>
-        <input class="text" id="psw" type="password" placeholder="Password" name="psw" value="" required><br><br> <!---Password-->
+        <input id="psw" type="password" placeholder="Password" name="psw" value="" required><br><br> <!---Password-->
         <button type="submit">Log in</button><br> <!---Button-->
         <p><a href="#">Forget password?</a></p> <!---Link to password-->
       </div>
