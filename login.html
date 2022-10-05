@@ -62,6 +62,23 @@
       font-size: 16px; /*Text size*/
       border: 0px solid rgb(203, 199, 199); /*Button border color*/
     }
+    .button2 { /*Settings of one button named "Create post"*/
+      width:  130px; /*Button width*/
+      height: 30px; /*Button height*/
+      background: rgb(173, 169, 169); /*Button Color*/
+      color: black; /*The color of the text inside the button*/
+      font-size: 24px; /*Text size*/
+      border: 0cm;
+      border-radius: 8px;
+      color: #34495e;
+      margin: 0;
+      position: absolute;
+      top: 5.5%;
+  
+    }
+    .button2:hover{
+        background-color: #CCC0BB;
+    }
   </style>
 </head>
 <body> <!---Body-->
@@ -69,7 +86,9 @@
     <div class="container1">
       <img class="avatar" src="https://moodle.ut.ee/theme/image.php/classic_ut/core/1664784034/u/f1" alt="avatar"
       width="68" height="68"> <!---Image-->
-      <p style="color: #34495e">Home</p> <!---Text--> 
+      <form action="index.html">
+        <button class="button2">Home</button>
+      </form>
     </div>
   </div>
   <div class="ObjektMiddle"> <!---Second objekt-->
