@@ -1,3 +1,4 @@
+Subject: Web Application Development (LTAT.05.004)
 Group: Group 5
 Team number: Group E
 Names: 
@@ -5,4 +6,3 @@ Names:
 	Aleksander Ontin - C18639
 	Tormi Teedemaa - B810588
 Link to the repository: https://github.com/tormiteedemaa/Homework-1
-
